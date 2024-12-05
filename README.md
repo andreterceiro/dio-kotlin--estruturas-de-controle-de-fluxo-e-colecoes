@@ -71,3 +71,10 @@ In this section you all saw **string interpolation**, that is mixing a string wi
 You also saw another example of use of **"vararg**" in the internal function **listOf()**.
 
 And you saw a example of "**any**", as you have more tham 1 type inside the list generated with **listof()**.
+
+
+## while and do while
+
+As **for loop** the behaviour and syntax is the same of the behaviour and syntax in some other programming languages and it is obvious, I will not reproduce here to save time.
+
+
