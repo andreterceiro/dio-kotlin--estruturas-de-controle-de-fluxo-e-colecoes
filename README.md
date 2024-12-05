@@ -25,7 +25,7 @@ fun main() {
 ### When as an expression
 
 
-### Verifying types - is
+## Verifying types - is
 
 ```kotlin
 package tests
@@ -38,3 +38,7 @@ fun main() {
     }
 }
 ```
+
+## Any - any type
+
+[Please see here](https://pl.kotl.in/gM0GHOkMQ"). Easy to understand. any = any type
