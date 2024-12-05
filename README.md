@@ -60,3 +60,14 @@ fun main() {
 ## Any - any type
 
 [Please see here](https://pl.kotl.in/gM0GHOkMQ"). Easy to understand. any = any type
+
+
+## for loop
+
+Very simple. Please see [this code](https://pl.kotl.in/qylf7Yhi6).
+
+In this section you all saw **string interpolation**, that is mixing a string with a variable.
+
+You also saw another example of use of **"vararg**" in the internal function **listOf()**.
+
+And you saw a example of "**any**", as you have more tham 1 type inside the list generated with **listof()**.
