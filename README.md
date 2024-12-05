@@ -78,3 +78,36 @@ And you saw a example of "**any**", as you have more tham 1 type inside the list
 As **for loop** the behaviour and syntax is the same of the behaviour and syntax in some other programming languages and it is obvious, I will not reproduce here to save time.
 
 
+## Operator function iterator
+
+Please see [this code](https://pl.kotl.in/1RTRsNJzf) in Kotlin Playground.
+
+Is the same as this code:
+```kotlin
+package tests
+
+class Animal(val type: String) {
+    override fun toString(): String {
+        return type
+    }
+}
+
+class Zoo(val animals: List<Animal>) {
+    operator fun iterator(): Iterator<Animal> {
+        return animals.iterator()
+    }
+}
+
+fun main() {
+    val animals = listOf(Animal("Lion"), Animal("Tiger"))
+    val zoo = Zoo(animals)
+
+    for (animal in zoo) {
+        println("$animal")
+    }
+}
+```
+
+In the code above you can see an special function, an operator function named "iterator". When we create this operator function in a class, this function needs to return an iterator. And this way we can use the class in a for loop, iterating it. See in the final of the code that we are iteration zoo.
+
+You also can see in the beginning of the code the keyword **"override"**, that we can use to override a function. In this case we are overriding the function **"toString()"**.
