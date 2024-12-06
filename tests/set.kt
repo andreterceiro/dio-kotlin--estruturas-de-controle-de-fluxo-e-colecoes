@@ -14,6 +14,10 @@ fun main() {
     print(someSet2)
     print(" - ")
 
-    someSet2.add(40) // how to add an element to a set
+    print(someSet2.add(40)) // how to add an element to a set - returns true to a new element
+    print(" - ")
+    print(someSet2.add(40)) // how to add an element to a set - returns false to an existing element in the set
+    print(" - ")
+
     print(someSet2)
 }
