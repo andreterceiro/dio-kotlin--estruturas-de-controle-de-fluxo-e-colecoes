@@ -330,7 +330,11 @@ fun main() {
     print(someSet2)
     print(" - ")
 
-    someSet2.add(40) // how to add an element to a set
+    print(someSet2.add(40)) // how to add an element to a set - returns true to a new element
+    print(" - ")
+    print(someSet2.add(40)) // how to add an element to a set - returns false to an existing element in the set
+    print(" - ")
+
     print(someSet2)
 }
 ```
@@ -340,3 +344,4 @@ In another words:
 - You can't have duplicated items in a set;
 - You can't access an item in a set by its index;
 - As you could see, we can't modify an item of a mutable set using the "array access" style, but to add items in a set we have the method `add()`;
+- The method `add()` of a mutable set returns `true` if the item was added to the set, and `false` if the item already exists in the set.
