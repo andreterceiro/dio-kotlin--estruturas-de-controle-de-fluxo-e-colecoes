@@ -2,6 +2,7 @@ package tests
 
 fun main() {
     testFilter()
+    testAny()
 }
 
 fun testFilter() {
@@ -32,5 +33,27 @@ fun testFilter() {
             it == 3
         }
     )
-    
+
+    print(" -- ")
+}
+
+fun testAny() {
+    val myList: List<Int> = listOf(1, 2, 3, 4)
+
+    // any() is not only applied to a list, ok?
+
+    print(
+        myList.any({
+            it > 2
+        })
+    )
+
+    print(" -- ")    
+
+    print(
+        myList.any({
+            it < -1
+        })
+    )
+
 }
