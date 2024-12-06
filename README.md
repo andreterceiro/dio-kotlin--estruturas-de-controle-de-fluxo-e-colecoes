@@ -345,3 +345,24 @@ In another words:
 - You can't access an item in a set by its index;
 - As you could see, we can't modify an item of a mutable set using the "array access" style, but to add items in a set we have the method `add()`;
 - The method `add()` of a mutable set returns `true` if the item was added to the set, and `false` if the item already exists in the set.
+
+
+## Maps
+
+Have an association os a **personalized key** to a **value**. There are MutableMap and a Map.
+
+Let's try some tests:
+
+```kotlin
+package tests
+
+fun main() {
+    val myMap = mutableMapOf(1 to 100, 2 to "x", 3 to 80, "a" to 60)
+    print(myMap)
+    print(" -- ")
+    myMap[1] = 0
+    print(myMap)
+}
+```
+
+As you could see we create a mutable map that can have a string or a integer as an index and as a value.
