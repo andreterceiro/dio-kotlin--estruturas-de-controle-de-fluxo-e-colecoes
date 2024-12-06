@@ -338,4 +338,5 @@ fun main() {
 In another words:
 
 - You can't have duplicated items in a set;
-- You can't access an item in a set by its index.
+- You can't access an item in a set by its index;
+- As you could see, we can't modify an item of a mutable set using the "array access" style, but to add items in a set we have the method `add()`;
