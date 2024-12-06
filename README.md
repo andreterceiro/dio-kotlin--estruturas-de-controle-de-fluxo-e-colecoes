@@ -249,3 +249,26 @@ fun main() {
     print(a2.idade) // 50
 }
 ```
+
+
+## Talking about lists and mutable lists
+
+Please see [this code](https://pl.kotl.in/nzvyPI73-) in Kotlin Playground.
+
+```kotlin
+package tests
+
+fun main() {
+    var lst:List<String> = listOf("a", "b", "c")
+    println(lst[0]) // a
+    //a1[0] = "f" // Error - is a list and not a mutable list
+    
+    val lstMutable = mutableListOf("a", "b", "c")
+    println(lstMutable[0]) // a
+    lstMutable[0] = "f" // Ok, val in two lines above defines that we cannot change to another list or
+                        // another value, but not defines that we cannot change the elements of the 
+                        // mutable list
+    println(lstMutable[0]) // f
+    
+}
+```
