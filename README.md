@@ -272,3 +272,19 @@ fun main() {
     
 }
 ```
+
+
+## List is an ordered collection - what is this?
+
+Seems in the first view that the list is ordered by default, what is not true, see:
+
+```kotlin
+package tests
+
+fun main() {
+    var someList: List<Int> = listOf(50,1,3)
+    print(someList) // prints [50, 1 , 3] - not otdered
+    print(" - ")
+    print(someList[0]) // prints 50
+}
+```
