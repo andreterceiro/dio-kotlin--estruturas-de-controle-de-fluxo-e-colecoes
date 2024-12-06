@@ -111,3 +111,58 @@ fun main() {
 In the code above you can see an special function, an operator function named "iterator". When we create this operator function in a class, this function needs to return an iterator. And this way we can use the class in a for loop, iterating it. See in the final of the code that we are iteration zoo.
 
 You also can see in the beginning of the code the keyword **"override"**, that we can use to override a function. In this case we are overriding the function **"toString()"**.
+
+
+## Ranges
+
+Please see [this code](https://pl.kotl.in/iIN8ocYRY) in Kotlin Playground.
+
+Is the same as this code:
+
+```kotlin
+package tests
+
+fun main() {
+    for (i in 1..3) {
+        println(i)
+    }
+    println("----------")
+    
+    for (i in 1 until 3) {
+        println(i)
+    }
+    println("----------")    
+
+    for (i in 1..10 step 2) {
+        println(i)
+    }
+    println("----------")     
+
+    for (i in 3 downTo 1) {
+        println(i)
+    }
+    println("----------")
+    
+    for (i in 'a'..'z' step 5) {
+        println(i)
+    }
+    println("----------")        
+    
+    var a = "a"
+
+    if (a !in "b".."z") {
+        println("a is not in the range")
+    } else {
+        println("a is in the range")
+    }
+}
+```
+
+You could see:
+
+- An example of an loop with integers
+- An example of an loop with strings
+- By default, as in Ruby programming language, the final number (3 as example in the range 1..3) is also in included. If you replace ".." by "until", the last number will not be included;
+- An example using "step";
+- An example using "downTo";
+- An example in a "if" clausule.
