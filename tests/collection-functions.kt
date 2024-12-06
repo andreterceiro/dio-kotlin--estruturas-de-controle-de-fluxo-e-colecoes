@@ -3,6 +3,7 @@ package tests
 fun main() {
     testFilter()
     testAny()
+    testMap()
 }
 
 fun testFilter() {
@@ -56,4 +57,19 @@ fun testAny() {
         })
     )
 
+    print(" -- ")    
+}
+
+fun testMap() {
+    val mySet: Set<Int> = setOf(1, 2, 3, 4)
+
+    // map() is not only applied to a set, ok?
+
+    print(
+        mySet.map({
+            it * 2
+        })
+    )
+
+    print(" -- ")
 }
