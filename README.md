@@ -253,7 +253,7 @@ fun main() {
 
 ## Talking about lists and mutable lists
 
-Please see [this code](https://pl.kotl.in/nzvyPI73-) in Kotlin Playground.
+Please see [this code](https://pl.kotl.in/18CbK5Z4R) in Kotlin Playground.
 
 ```kotlin
 package tests
