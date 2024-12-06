@@ -1,10 +1,19 @@
 package tests
 
 fun main() {
-    var someList: Set<Int> = setOf(50, 1, 3, 50)
-    print(someList) // [50 , 1 , 3]
+    var someSet1: Set<Int> = setOf(50, 1, 3, 50)
+    print(someSet1) // [50 , 1 , 3]
     print(" - ")
-    print(someList[0]) // Error - not fatal, ok, but an error printed in the screen
+    // print(someSet1[0]) // Error
     print(" - ")
-    print(someList) // [50 , 1 , 3]
+    print(someSet1) // [50 , 1 , 3]
+
+    print(" ########################### ")
+
+    val someSet2: MutableSet<Int> = mutableSetOf(50,1,3)
+    print(someSet2)
+    print(" - ")
+
+    someSet2.add(40) // how to add an element to a set
+    print(someSet2)
 }
