@@ -229,4 +229,23 @@ In the last line of the previous code, we used an "if" like a ternary operator i
 Please access this 2 sections in [this repository](https://github.com/digitalinnovationone/aprenda-kotlin-com-exemplos):
     
 - 2_controle_de_fluxo
-- 3_colecoes)
+- 3_colecoes
+
+
+## Attribuitiof of objects by reference
+
+Please see [this code](https://pl.kotl.in/PFKOt0_8y) in Kotlin Playground.
+
+```kotlin
+package tests
+
+class A(var idade:Int = 30)
+
+fun main() {
+    var a1 = A()
+    var a2 = a1
+    a1.idade = 50
+    println(a1 === a2) // true
+    print(a2.idade) // 50
+}
+```
