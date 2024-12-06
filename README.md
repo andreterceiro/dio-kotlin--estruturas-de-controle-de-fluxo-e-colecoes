@@ -166,3 +166,37 @@ You could see:
 - An example using "step";
 - An example using "downTo";
 - An example in a "if" clausule.
+
+
+## Comparing with "==" and comparing with "==="
+
+Please see [this code](https://pl.kotl.in/7w-7nePTH) in Kotlin Playground.
+
+Is the same as tjis following code:
+
+```kotlin
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main() {
+    var a:Any = 1
+    var b:Any = "1"
+    //println(a==b) // ERROR
+    //println(a===b) // ERROR
+
+    println("oi"==="oi") // true
+    println(a)
+    println(b)
+    
+    a = setOf("banana", "apple", "pinaple")
+    b = setOf("apple", "banana", "pinaple")    
+    
+    println(a==b) // true
+    println(a===b) // false
+}
+```
+
+In some another programming languages (like Javascript), "==" returns true if the values are equal indepent of the type (as an example, 1 == "1"), and "===" returns true if the values are equal and are of the same type. But in Kotlin is not possible to compare a string to an integer with "==" nor "===" (se the comments "ERROR" in the previous code). But if we have 2 sets (set is a sructure without equals elements like in other languages), we can compare, as we did in the final of the previous code.
+
+in Kotlin , "==" is used to compare the values, and "===" is used to compare the references (same memory location).
