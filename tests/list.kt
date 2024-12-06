@@ -5,7 +5,7 @@ fun main() {
     print(someList)
     print(" - ")
     print(someList[0])
-    print(" - ")
-    sort(someList)
+    print(" - ") 
+    // sort(someList) // ERROR
     print(someList)
 }
