@@ -222,3 +222,11 @@ In the last line of the previous code, we used an "if" like a ternary operator i
 
 - Function with the body in the same line as its declaration uses an equal, have no braces and does not need the keyword "return";
 - The "if" in one line also does not have braces.
+
+
+# DIO Git repository related to the class
+
+Please access this 2 sections in [this repository](https://github.com/digitalinnovationone/aprenda-kotlin-com-exemplos):
+    
+- 2_controle_de_fluxo
+- 3_colecoes)
