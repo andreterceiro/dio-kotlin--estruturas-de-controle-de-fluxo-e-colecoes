@@ -288,3 +288,7 @@ fun main() {
     print(someList[0]) // prints 50
 }
 ```
+
+So to understand better you need to access [this definition](https://kotlinlang.org/docs/collections-overview.html):
+
+![list, set and map definitions](images/list-set-map-definitions.png)
