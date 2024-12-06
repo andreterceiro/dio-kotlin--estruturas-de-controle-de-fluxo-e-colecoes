@@ -19,5 +19,4 @@ fun main() {
 
     someList2[0] = 1
     print(someList2)
-
 }
