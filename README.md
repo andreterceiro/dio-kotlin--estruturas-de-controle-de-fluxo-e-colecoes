@@ -292,3 +292,26 @@ fun main() {
 So to understand better you need to access [this definition](https://kotlinlang.org/docs/collections-overview.html):
 
 ![list, set and map definitions](images/list-set-map-definitions.png)
+
+
+## Sets - you cannot have duplicate elements and cannot access specifying an index
+
+You will understand seeing this piece of code and reading the comments:
+
+```kotlin
+package tests
+
+fun main() {
+    var someList: Set<Int> = setOf(50, 1, 3, 50)
+    print(someList) // [50 , 1 , 3]
+    print(" - ")
+    print(someList[0]) // Error - not fatal, ok, but an error printed in the screen
+    print(" - ")
+    print(someList) // [50 , 1 , 3]
+}
+```
+
+In another words:
+
+- You can't have duplicated items in a set;
+- You can't access an item in a set by its index.
