@@ -23,4 +23,14 @@ fun testFilter() {
             it > 2
         })
     )
+
+    print(" -- ")
+
+    // IN THIS CASE you don't need the parenthesis
+    print(
+        mySet.filter{
+            it == 3
+        }
+    )
+    
 }
