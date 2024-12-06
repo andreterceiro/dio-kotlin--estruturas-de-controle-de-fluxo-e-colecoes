@@ -4,6 +4,7 @@ fun main() {
     testFilter()
     testAny()
     testMap()
+    testFlatMap()
 }
 
 fun testFilter() {
@@ -72,4 +73,21 @@ fun testMap() {
     )
 
     print(" -- ")
+}
+
+fun testFlatMap() {
+    val menProgrammers = listOf("Andre", "Pelizoni", "Marcelo")
+    val womenProgrammers = listOf("Juliana", "Lais")
+
+    val programmers = listOf(menProgrammers, womenProgrammers)
+    
+    // 2 dimensions
+    val mapProgrammers = programmers.map({it})
+
+    // 1 dimension - flat 
+    val flatMapProgrammers = programmers.flatMap({it})
+
+    print(mapProgrammers)
+    print(" ------ ")
+    print(flatMapProgrammers)
 }
