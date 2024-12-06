@@ -1,10 +1,10 @@
 package tests
 
 fun main() {
-    testFilter()
-    testAny()
-    testMap()
-    testFlatMap()
+    testFilter() // prints [1, 2, 3] -- [3, 4] -- [3]
+    testAny() // prints true -- false 
+    testMap() // prints [2, 4, 6, 8]
+    testFlatMap() // prints [[Andre, Pelizoni, Marcelo], [Juliana, Lais]] -- [Andre, Pelizoni, Marcelo, Juliana, Lais]
 }
 
 fun testFilter() {
@@ -36,7 +36,7 @@ fun testFilter() {
         }
     )
 
-    print(" -- ")
+    print(" ** ")
 }
 
 fun testAny() {
@@ -58,7 +58,7 @@ fun testAny() {
         })
     )
 
-    print(" -- ")    
+    print(" ** ")    
 }
 
 fun testMap() {
@@ -72,7 +72,7 @@ fun testMap() {
         })
     )
 
-    print(" -- ")
+    print(" ** ")
 }
 
 fun testFlatMap() {
@@ -88,6 +88,6 @@ fun testFlatMap() {
     val flatMapProgrammers = programmers.flatMap({it})
 
     print(mapProgrammers)
-    print(" ------ ")
+    print(" -- ")
     print(flatMapProgrammers)
 }
